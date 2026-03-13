@@ -4,6 +4,31 @@ document.addEventListener("DOMContentLoaded", () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 
+  const mainSections = document.querySelectorAll("main > section");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  if (navLinks.length && mainSections.length) {
+    navLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute("href").replace("#", "");
+
+        mainSections.forEach((section) => {
+          if (section.id === targetId) {
+            section.classList.remove("hidden-section");
+          } else {
+            section.classList.add("hidden-section");
+          }
+        });
+
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    });
+  }
+
   const form = document.getElementById("contactForm");
   const status = document.getElementById("formStatus");
 
