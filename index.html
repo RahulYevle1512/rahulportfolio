@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul Yevle | AWS & Cloud Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div>
+          <h1 class="logo">Rahul<span>Yevle</span></h1>
+          <p class="tagline">AWS & Cloud Enthusiast</p>
+        </div>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="badge">Available for cloud projects</p>
+            <h2>Design, build, and deploy on AWS.</h2>
+            <p class="hero-text">
+              I help build reliable, scalable cloud solutions using AWS services
+              like EC2, S3, Lambda, and more. This portfolio highlights my
+              hands-on experience and projects.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn primary">View Projects</a>
+              <a href="#contact" class="btn ghost">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>AWS Snapshot</h3>
+            <ul>
+              <li><span>☁️</span> Cloud architecture & diagrams</li>
+              <li><span>⚙️</span> CI/CD pipelines & automation</li>
+              <li><span>🛡️</span> Security best practices</li>
+              <li><span>📈</span> Monitoring & cost optimization</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>About Me</h2>
+            <p>
+              Hi, I’m <strong>Rahul Yevle</strong>, passionate about cloud
+              computing and AWS. I enjoy designing secure, scalable architectures
+              and automating repetitive tasks using infrastructure as code.
+            </p>
+            <p>
+              This portfolio is hosted for free using
+              <strong>GitHub Pages</strong> and demonstrates how I structure
+              frontend and backend code for small projects.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Quick Facts</h3>
+            <ul class="facts-list">
+              <li>Focused on AWS & DevOps</li>
+              <li>Comfortable with Python / Node.js</li>
+              <li>Interested in serverless (Lambda, API Gateway)</li>
+              <li>Love learning and experimenting with new tools</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt">
+        <div class="container">
+          <h2 class="section-title">AWS & Cloud Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Compute & Networking</h3>
+              <ul>
+                <li>EC2, Auto Scaling</li>
+                <li>Elastic Load Balancing</li>
+                <li>VPC, Subnets, Security Groups</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Storage & Databases</h3>
+              <ul>
+                <li>S3, Glacier</li>
+                <li>RDS basics</li>
+                <li>DynamoDB basics</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Serverless & Automation</h3>
+              <ul>
+                <li>AWS Lambda</li>
+                <li>API Gateway</li>
+                <li>CloudWatch logs & metrics</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>DevOps & Tools</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>CI/CD basics</li>
+                <li>Infrastructure as Code (intro)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Highlighted Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <h3>Serverless Contact API</h3>
+              <p>
+                Demo backend built with AWS Lambda and API Gateway to handle
+                contact form submissions.
+              </p>
+              <ul>
+                <li>Node.js Lambda function</li>
+                <li>Deployed behind API Gateway</li>
+                <li>Example code in <code>backend/lambda-contact.js</code></li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <h3>Static Portfolio on GitHub Pages</h3>
+              <p>
+                This website itself is a project, showing how to host a static
+                site for free using GitHub Pages.
+              </p>
+              <ul>
+                <li>Pure HTML, CSS, JavaScript</li>
+                <li>Deployed from <code>main</code> branch</li>
+                <li>Custom styling and layout</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container two-col">
+          <div>
+            <h2>Contact Me</h2>
+            <p>
+              Have a cloud or AWS-related project in mind? Reach out using this
+              form or email me directly.
+            </p>
+            <p class="hint">
+              This demo form uses JavaScript only on the frontend. In a real
+              deployment, it can submit to an AWS Lambda function via API
+              Gateway.
+            </p>
+          </div>
+          <form class="card contact-form" id="contactForm">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn primary full-width">
+              Send Message
+            </button>
+            <p id="formStatus" class="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Rahul Yevle. All rights reserved.</p>
+        <p>
+          Hosted on
+          <a href="https://pages.github.com/" target="_blank" rel="noreferrer"
+            >GitHub Pages</a
+          >.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
